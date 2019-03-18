@@ -1,0 +1,45 @@
+<body>
+<div *ngIf = "disp1" class = "div1">
+  <h2>Login</h2>
+  <form [formGroup] = "form" (ngSubmit) = "check(form.value)">
+    <table>
+      <tr>  
+        <td><h3>Username :</h3></td>
+        <td><input type = "text" placeholder = "enter username" formControlName = "id"></td>
+      </tr>
+      <tr>
+        <td><h3>Password : </h3></td>
+        <td><input type = "password" placeholder = "enter password" formControlName = "password"></td>
+      </tr>
+      <tr>
+        <td><h3>Login As : </h3></td>
+        <td>
+          <select (change)="selectChangeHandler($event)">
+            <option disabled>choose designation</option>
+            <option value = "manager">Manager</option>
+            <option value = "Admin">Admin</option>
+            <option value = "employee">Employee</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+    <input type = "submit" value = "login">
+    <h4>{{errorMsg}}</h4>
+  </form>
+</div>
+
+
+<div class = "div2" *ngIf = "disp2">
+  <admin-panel></admin-panel>
+</div>
+<div class = "div2" *ngIf = "disp3">
+    <manager-panel></manager-panel>
+</div>
+<div class = "div2" *ngIf = "disp4">
+    <employee-panel></employee-panel>
+</div>
+
+</body>
+
+
+  

@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": "admin",
+      "fname": "Rohan",
+      "lname": "Kumar",
+      "designation": "Admin",
+      "dob": "02/08/1992",
+      "phone": "7894561232",
+      "email": "abc@gmail.com",
+      "password": "admin"
+    },
+    {
+      "id": "manager",
+      "fname": "Kunal",
+      "lname": "Tyagi",
+      "designation": "manager",
+      "dob": "09/02/1997",
+      "phone": "9988705745",
+      "email": "kunaltyagi93@gmail.com",
+      "password": "manager"
+    },
+    {
+      "id": "employee1",
+      "fname": "Rajat",
+      "lname": "Kumar",
+      "designation": "employee",
+      "dob": "02/02/1990",
+      "phone": "9874562145",
+      "email": "abc@gmail.com",
+      "password": "employee"
+    }
+  ]
+}

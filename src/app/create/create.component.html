@@ -1,0 +1,52 @@
+<body>
+    <div class = "div1">
+      <h2>Enter Employee Details</h2>
+      <form [formGroup] = "form" (ngSubmit) = "getUser(form.value)">
+        <table>
+          <tr>  
+            <td><h3>Employee ID :</h3></td>
+            <td><input type = "text" placeholder = "enter employee id" formControlName = "id"></td>
+          </tr>
+          <tr>  
+            <td><h3>Firstname :</h3></td>
+            <td><input type = "text" placeholder = "enter firstname" formControlName = "fname"></td>
+          </tr>
+          <tr>  
+              <td><h3>Lastname :</h3></td>
+              <td><input type = "text" placeholder = "enter lastname" formControlName = "lname"></td>
+          </tr>
+          <tr>
+            <td><h3>Designation : </h3></td>
+            <td>
+                <select (change)="selectChangeHandler($event)">
+                    <option disabled>choose designation</option>
+                    <option value = "manager">Manager</option>
+                    <option value = "admin">Admin</option>
+                    <option value = "employee">Employee</option>
+                </select>
+            </td>
+          </tr>
+          <tr>  
+              <td><h3>DOB :</h3></td>
+              <td><input type = "text" placeholder = "dd/MM/yyyy" formControlName = "dob"></td>
+          </tr>
+          <tr>  
+              <td><h3>Phone :</h3></td>
+              <td><input type = "text" placeholder = "enter phone number" formControlName = "phone"></td>
+          </tr>
+          <tr>  
+              <td><h3>Email :</h3></td>
+              <td><input type = "text" placeholder = "enter email" formControlName = "email"></td>
+          </tr>
+          <tr>  
+              <td><h3>Password :</h3></td>
+              <td><input type = "password" placeholder = "enter password" formControlName = "password"></td>
+          </tr>
+        </table>
+        <input type = "submit" value = "Submit" [disabled] = "!form.valid">
+      </form>
+    </div>
+  </body>
+    
+    
+      

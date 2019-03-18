@@ -1,0 +1,49 @@
+body{
+    margin : 0;
+    padding : 0;
+}
+.div1{
+    margin : 20px 720px;
+    padding : 20px;
+    border-style: solid;
+    border-width: 10px 1px;
+    height : 950px;
+    width: 700px;
+    background-color: white;
+}
+button{
+    background-color: black;
+    color: white;
+    font-size : 25px;
+    padding : 25px;
+    margin : 10px 70px;
+    width : 150px;
+}
+h2{
+    margin-top: 20px;
+    text-align: center;
+    font-size : 40px;
+}
+input[type = "text"],input[type = "password"],select{
+    font-size :22px;
+    margin :  10px 20px;
+    width : 300px;
+}
+input[type = "submit"]{
+    width : 100px;
+    margin : 10px 300px;
+    font-size :20px;
+    padding : 10px;
+    background-color: black;
+    color: white;
+}
+tr{
+    font-size :25px;
+    margin :  10px 20px;
+    width : 10px;
+}
+table{
+    margin-left: 100px;
+}
+
+

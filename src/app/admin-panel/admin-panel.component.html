@@ -1,0 +1,30 @@
+<body>
+<div *ngIf = "disp1" class = "div1">
+
+    <h2>Admin Panel</h2>
+  <table>
+    <tr>  
+        <button type = "button" (click) = "toggle1()">Create</button>
+        <button type = "button" >Display</button>
+    </tr>
+    <tr>
+        <button type = "button" >Search</button>
+        <button type = "button">Delete</button>
+    </tr>
+    <tr>
+        <button type = "button" >Update</button>
+        <button type = "button" (click) = "toggle6()">Log Out</button>
+    </tr>
+  </table>
+    
+</div>
+</body>
+
+
+<div *ngIf = "disp2">
+    <create></create>
+</div>
+
+<div *ngIf = "disp6">
+  <login></login>
+</div>
